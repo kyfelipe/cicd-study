@@ -1,5 +1,6 @@
 pipeline {
   agent any
+
   stages {
     stage('Build') {
       steps {
@@ -9,7 +10,7 @@ pipeline {
             println('Hi ${name}')
           else
             println('Hi human')
-          
+
           sleep 2
           echo 'end of script'
         }
